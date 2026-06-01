@@ -7,7 +7,7 @@ export const projects = [
     subtitle: 'AI Music Composition System',
     year: '2024',
     status: 'Completed',
-    imageUrl: 'public/images/projects/MuseAI.png',
+    imageUrl: '/images/projects/MuseAI.png',
     description:
       'An intelligent music composition platform that leverages AI to generate original melodies, harmonies, and full arrangements. Users can guide the creative process through mood, genre, and tempo controls.',
     
@@ -29,7 +29,7 @@ export const projects = [
     subtitle: 'Real-time Precious Metals Trading',
     year: '2024',
     status: 'In Production',
-    imageUrl: 'public/images/projects/share.jpg',
+    imageUrl: '/images/projects/share.jpg',
     description:
       'A full-stack investment platform for tracking and trading precious metals. Features live price feeds, portfolio analytics, and a clean dashboard for monitoring holdings across gold and silver markets.',
     
@@ -51,7 +51,7 @@ export const projects = [
     subtitle: 'Specialty Coffee Brand Website',
     year: '2023',
     status: 'Live',
-    imageUrl: 'public/images/projects/homebeans_logo.jpg',
+    imageUrl: '/images/projects/homebeans_logo.jpg',
     description:
       'A premium website for a specialty coffee brand — designed to reflect craft and warmth. Features a product catalogue, brewing guides, and an elegant ordering flow. Focused heavily on UI aesthetics.',
     tech: ['React', 'Tailwind CSS', 'Framer Motion', 'Sanity CMS'],
