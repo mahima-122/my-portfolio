@@ -19,9 +19,9 @@ export default function Footer() {
 
         <div className="flex items-center gap-4">
           {[
-            { href: 'mailto:mahima@example.com', icon: Mail },
-            { href: 'https://github.com', icon: Github },
-            { href: 'https://linkedin.com', icon: Linkedin },
+            { href: 'mailto:mahimabastola4@gmail.com', icon: Mail },
+            { href: 'https://github.com/mahima-122', icon: Github },
+            { href: 'https://www.linkedin.com/in/mahimabastola1/', icon: Linkedin },
           ].map(({ href, icon: Icon }) => (
             <a
               key={href}

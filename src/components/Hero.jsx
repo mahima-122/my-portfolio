@@ -67,14 +67,20 @@ export default function Hero() {
 
             <motion.div variants={item} className="flex flex-wrap items-center gap-4">
               <button
-                onClick={() => document.querySelector('#projects')?.scrollIntoView({ behavior: 'smooth' })}
-                className="btn-primary"
+                onClick={() => {
+                  const el = document.getElementById('projects');
+                  if (el) el.scrollIntoView({ behavior: 'smooth' });
+                }}
+               className="btn-primary"
               >
                 View Projects
                 <ArrowDown size={14} />
               </button>
               <button
-                onClick={() => document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' })}
+                onClick={() => {
+                  const el = document.getElementById('contact');
+                  if (el) el.scrollIntoView({ behavior: 'smooth' });
+                }}
                 className="btn-outline"
               >
                 Contact Me
