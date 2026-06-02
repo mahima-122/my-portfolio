@@ -65,7 +65,7 @@ export default function Hero() {
               user-friendly, visually engaging digital experiences.
             </motion.p>
 
-            <motion.div variants={item} className="flex flex-wrap items-center gap-4">
+            <motion.div variants={item} className="flex flex-wrap items-center gap-4 relative z-20">
               <button
                 onClick={() => {
                   const el = document.getElementById('projects');
