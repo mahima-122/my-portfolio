@@ -2,16 +2,16 @@ import { motion } from 'framer-motion'
 import { useInView } from '../hooks/useInView'
 
 const stats = [
-  { value: '3+', label: 'Years building' },
+  { value: '2+', label: 'Years building' },
   { value: '5+', label: 'Projects' },
-  { value: '3', label: 'Companies worked with' },
+  { value: '2', label: 'Companies worked with' },
 ]
 
 export default function About() {
   const [ref, inView] = useInView()
 
   return (
-    <section id="about" className="py-28 md:py-36">
+    <section id="about" className="py-10 md:py-14">
       <div className="section-container">
         <div ref={ref} className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
           
@@ -23,24 +23,23 @@ export default function About() {
           >
             <p className="section-label">About</p>
             <h2 className="section-title mb-8">
-              Building with code,<br />
-              <span className="text-text-secondary">designing with intent</span>
+              Finding Patterns,<br />
+              <span className="text-text-secondary">Solving Problem</span>
             </h2>
             <div className="space-y-5 text-text-secondary" style={{ fontWeight: 300 }}>
               <p>
-                I started as a full-stack developer working with <span className="text-text-primary font-400">Python, Django, and Flask</span> — 
-                building backend systems and learning how the web really works from the inside out.
-              </p>
-              <p>
-                My focus has since shifted toward <span className="text-text-primary font-400">frontend development and UI design</span>, 
-                where I feel most creative. I care deeply about how interfaces look, feel, and behave — 
-                the small details that make a product genuinely enjoyable to use.
-              </p>
-              <p>
-                I'm interested in building <span className="text-text-primary font-400">scalable web applications</span> that balance 
-                clean architecture with modern, thoughtful design. I use AI tools to accelerate my 
-                workflow while always staying sharp on the fundamentals.
-              </p>
+  My interest in technology has always been driven by curiosity and problem-solving. Over time, I found myself becoming increasingly interested in the data behind products, businesses, and everyday decisions.
+</p>
+
+<p>
+  My focus is now centered on <span className="text-text-primary font-400">Data Analytics</span>,
+  where I work with SQL, Python, Pandas, PostgreSQL, and Power BI to clean, analyze, visualize, and interpret data. I enjoy uncovering patterns, identifying trends, and turning raw datasets into meaningful insights.
+</p>
+
+<p>
+  I'm interested in solving <span className="text-text-primary font-400">real-world business problems through data</span>,
+  combining analytical thinking with practical tools to support better decision-making. Currently, I am building hands-on analytics projects, strengthening my technical skills, and continuously exploring how data can create measurable impact.
+</p>
             </div>
           </motion.div>
 
@@ -75,7 +74,18 @@ export default function About() {
               <p className="font-mono text-xs text-text-muted mb-6 tracking-widest uppercase">Currently working with</p>
               
               <div className="flex flex-wrap gap-2">
-                {['React', 'Python', 'Django', 'Tailwind', 'Framer Motion', 'Figma', 'Git'].map((tech) => (
+                {[
+  'SQL',
+  'Python',
+  'Pandas',
+  'PostgreSQL',
+  'Power BI',
+  'Data Cleaning',
+  'Data Visualization',
+  'Jupyter Notebook',
+  'Git',
+  'Matplotlib'
+].map((tech) => (
                   <span key={tech} className="tag">{tech}</span>
                 ))}
               </div>

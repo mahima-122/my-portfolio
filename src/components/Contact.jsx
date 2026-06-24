@@ -69,7 +69,7 @@ export default function Contact() {
   }
 
   return (
-    <section id="contact" className="py-28 md:py-36 bg-bg-secondary">
+    <section id="contact" className="py-8 md:py-12 bg-bg-secondary">
       <div className="section-container">
         <motion.div
           ref={ref}

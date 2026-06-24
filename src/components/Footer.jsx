@@ -14,7 +14,7 @@ export default function Footer() {
         </div>
 
         <p className="font-mono text-xs text-text-muted text-center">
-          Designed & built with care
+          From Data to Decisions
         </p>
 
         <div className="flex items-center gap-4">

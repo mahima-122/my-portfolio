@@ -12,7 +12,7 @@ const item = {
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden grid-noise">
+    <section className="relative min-h-[80vh] flex items-center overflow-hidden grid-noise">
       
       {/* Background orbs */}
       <div className="absolute top-1/4 -right-40 w-[600px] h-[600px] rounded-full opacity-[0.04] blur-3xl"
@@ -45,7 +45,7 @@ export default function Hero() {
             </motion.h1>
 
             <motion.div variants={item} className="flex flex-wrap gap-2 mb-10">
-              {['Frontend Developer', 'UI-Focused Full Stack', 'Creative Designer'].map((tag) => (
+              {['Aspiring Data Analyst', 'SQL', 'Python(Pandas)', 'Power BI'].map((tag) => (
                 <span
                   key={tag}
                   className="font-mono text-xs text-text-secondary border border-border px-3 py-1.5 rounded-full"
@@ -60,9 +60,9 @@ export default function Hero() {
               className="text-text-secondary text-lg leading-relaxed mb-12 max-w-xl"
               style={{ fontWeight: 300 }}
             >
-              Frontend-focused developer with experience building interactive web applications 
-              and a strong eye for design. I combine development and creativity to build 
-              user-friendly, visually engaging digital experiences.
+              I am a BSc CSIT graduate passionate about uncovering patterns, solving problems, and making data-driven decisions through analytics.
+
+My focus is on transforming raw data into valuable business insights using SQL, Python, Pandas, PostgreSQL, and Power BI. 
             </motion.p>
 
             <motion.div variants={item} className="flex flex-wrap items-center gap-4 relative z-20">
@@ -89,7 +89,7 @@ export default function Hero() {
           </motion.div>
 
           {/* 👉 RIGHT SIDE IMAGE (NEW ADDITION) */}
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0, x: 40 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1 }}
@@ -98,12 +98,12 @@ export default function Hero() {
             <div className="relative flex items-center justify-center">
 
               {/* Soft background highlight */}
-              <div className="absolute w-[320px] h-[320px] rounded-full blur-3xl opacity-20"
+              {/* <div className="absolute w-[320px] h-[320px] rounded-full blur-3xl opacity-20"
                 style={{ background: '#a8cc35' }}
               />
 
               {/* Your image */}
-              <img
+              {/* <img
                 src="/Mee.png"  
                 alt="Mahima Bastola"// 
                 className=" relative
@@ -118,7 +118,7 @@ export default function Hero() {
         z-10"
               />
             </div>
-          </motion.div>
+          </motion.div>  */}
 
         </div>
 
@@ -144,7 +144,7 @@ export default function Hero() {
         className="absolute right-0 top-1/2 -translate-y-1/2 font-display font-800 text-text-primary select-none pointer-events-none hidden lg:block"
         style={{ fontSize: '22vw', opacity: 0.015, lineHeight: 1 }}
       >
-        DEV
+        DATA
       </div>
     </section>
   )

@@ -6,7 +6,7 @@ export default function Experience() {
   const [ref, inView] = useInView()
 
   return (
-    <section id="experience" className="py-28 md:py-36">
+    <section id="experience" className="py-8 md:py-12">
       <div className="section-container">
         <motion.div
           ref={ref}
@@ -30,11 +30,11 @@ export default function Experience() {
                 initial={{ opacity: 0, x: -30 }}
                 animate={inView ? { opacity: 1, x: 0 } : {}}
                 transition={{ duration: 0.7, delay: i * 0.15, ease: [0.22, 1, 0.36, 1] }}
-                className="md:grid md:gap-12 py-10 border-b border-border last:border-none"
+                className="md:grid md:gap-12 py-6 border-b border-border last:border-none"
                 style={{ gridTemplateColumns: '140px 1fr' }}
               >
                 {/* Period */}
-                <div className="mb-4 md:mb-0 md:text-right md:pt-1">
+                <div className="mb-2 md:mb-0 md:text-right md:pt-1">
                   <span className="font-mono text-xs text-text-muted">{exp.period}</span>
                 </div>
 
@@ -55,7 +55,7 @@ export default function Experience() {
                   </p>
 
                   <div className="flex flex-wrap gap-2">
-                    {exp.tags.map((tag) => (
+                    {exp.tags && exp.tags.map((tag) => (
                       <span key={tag} className="tag">{tag}</span>
                     ))}
                   </div>

@@ -6,7 +6,7 @@ export default function Skills() {
   const [ref, inView] = useInView()
 
   return (
-    <section id="skills" className="py-28 md:py-36 bg-bg-secondary">
+    <section id="skills" className="py-10 md:py-14 bg-bg-secondary">
       <div className="section-container">
         <motion.div
           ref={ref}
@@ -56,7 +56,20 @@ export default function Skills() {
             }}
           >
             {[...Array(3)].flatMap(() =>
-              ['React', 'Python', 'Django', 'Flask', 'JavaScript', 'Tailwind', 'Figma', 'Git', 'REST APIs', 'UI Design', 'Framer Motion', 'PostgreSQL'].map((t) => (
+             [
+  'SQL',
+  'Python',
+  'Pandas',
+  'PostgreSQL',
+  'Power BI',
+  'Data Cleaning',
+  'Data Analysis',
+  'Data Visualization',
+  'Matplotlib',
+  'Jupyter Notebook',
+  'Git',
+  'Business Intelligence'
+].map((t) => (
                 <span key={Math.random()} className="font-mono text-xs text-text-muted tracking-widest uppercase">
                   {t} <span className="text-accent mx-2">·</span>
                 </span>
